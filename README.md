@@ -94,6 +94,8 @@ The fitted model forecasts the 10-day test period, with results converted back t
 
 A single-layer LSTM (32 units) is trained on the same log-transformed series using an 18-step lookback window (3 seasonal cycles) to forecast the same 10-day horizon, enabling direct comparison with the SARIMA model.
 
+![LSTM Forecast vs Actual Sales](lstm_forecast_plot.png)
+
 **Test RMSE: 4712.4** — approximately 14% worse than SARIMA.
 
 **Why SARIMA outperformed LSTM here:**
